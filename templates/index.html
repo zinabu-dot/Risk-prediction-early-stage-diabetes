@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+    <!-- 
+    <title>Early Diabetes Prediction</title>  
+    -->
+  <meta charset="UTF-8">
+   <title>ML API</title> 
+   <!--
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+-->
+<link rel="stylesheet" href="static/css/style.css">
+  
+  
+</head>
+
+
+<body>
+
+
+ <div   class="login">  <!-- style="margin:200px 0 0 200px" -->
+ 
+     
+	<h1>Risk Prediction of Early Stage Diabetes</h1>  <!-- style="margin:200px 0 0 200px" -->
+	
+	<img src="static/img/diabml.png" alt="diab-img"/>
+	
+	<!--
+	<h2 style="margin:-1px 0 0 -1px"> If your answer for yes or no questions is yes, put 1; if no, put 0 in the box of each question </h2>
+    -->
+    
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="age" placeholder="input age" required="required" />
+        <select type="text" name="gender" <!--placeholder="Gender" --> required="required" >
+             <option value="">Select Gender</option>
+							<option value="0">Female</option>
+							<option value="1">Male</option>
+						</select>
+						
+      <select type="text" name="polyuria" <!-- placeholder="Polyuria" --> required="required" />
+            <option value="">Select Polyuria Symptom </option>
+							<option value="0">No</option>
+							<option value="1">Yes</option>
+						</select>
+      <select type="text" name="polydipsia" <!-- placeholder="Polydipsia" --> required="required" />
+             <option value="">Select Polydipsia Symptom </option>
+							<option value="0">No</option>
+							<option value="1">Yes</option>
+						</select>
+      <select type="text" name="sudden_weight_loss" <!-- placeholder="Sudden Weight Loss" --> required="required" />
+              <option value="">Select Sudden Weight Loss Symptom </option>
+							<option value="0">No</option>
+							<option value="1">Yes</option>
+						</select>
+      <select type="text" name="weakness" <!-- placeholder="Weakness" --> required="required" />
+              <option value="">Select Weakness Symptom </option>
+							<option value="0">No</option>
+							<option value="1">Yes</option>
+						</select>
+      <select type="text" name="polyphagia" <!-- placeholder="Polyphagia" --> required="required" />
+              <option value="">Select Polyphagia Symptom </option>
+							<option value="0">No</option>
+							<option value="1">Yes</option>
+						</select>
+
+      <select type="text" name="genital_thrush" <!-- placeholder="Genital Thrush" --> required="required" />
+              <option value="">Select Genital Thrush Symptom </option>
+							<option value="0">No</option>
+							<option value="1">Yes</option>
+						</select>
+      <select type="text" name="visual_blurring" <!-- placeholder="Visual Blurring" --> required="required" />
+              <option value="">Select Visual Blurring Symptom </option>
+							<option value="0">No</option>
+							<option value="1">Yes</option>
+						</select>
+      <select type="text" name="itching" <!-- placeholder="Itching" --> required="required" />
+             <option value="">Select Itching Symptom </option>
+							<option value="0">No</option>
+							<option value="1">Yes</option>
+						</select>
+      <select type="text" name="irritability" <!-- placeholder="Irritability" --> required="required" />
+              <option value="">Select Irritability Symptom </option>
+							<option value="0">No</option>
+							<option value="1">Yes</option>
+						</select>
+      <select type="text" name="delayed_healing" <!-- placeholder="Delayed Healing" --> required="required" />
+              <option value="">Select Delayed Healing Symptom </option>
+							<option value="0">No</option>
+							<option value="1">Yes</option>
+						</select>
+      <select type="text" name="partial_paresis" <!-- placeholder="Partial Paresis" --> required="required" />
+              <option value="">Select Partial Paresis Symptom </option>
+							<option value="0">No</option>
+							<option value="1">Yes</option>
+						</select>
+      <select type="text" name="muscle_stiffness" <!-- placeholder="Muscle Stiffness" --> required="required" />
+              <option value="">Select Muscle Stiffness Symptom </option>
+							<option value="0">No</option>
+							<option value="1">Yes</option>
+						</select>
+    
+      <select type="text" name="alopecia" <!-- placeholder="Alopecia" --> required="required" />
+              <option value="">Select Alopecia Symptom </option>
+							<option value="0">No</option>
+							<option value="1">Yes</option>
+						</select>
+      <select type="text" name="obesity" <!-- placeholder="Obesity" --> required="required" />
+              <option value="">Select Obesity Symptom </option>
+							<option value="0">No</option>
+							<option value="1">Yes</option>
+						</select>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+	<p class="pred"> {{ prediction_text }} </p>
+
+ </div>
+
+
+</body>
+</html>
