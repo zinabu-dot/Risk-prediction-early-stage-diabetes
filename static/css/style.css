@@ -103,7 +103,7 @@ select {
 button {
 	text-align: center;
 	margin: auto;
-	display: flex;
+	display: block;
 }
 
 p {
