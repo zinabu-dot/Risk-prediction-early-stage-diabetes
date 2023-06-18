@@ -44,7 +44,8 @@ body {
 	color: goldenrod; 
 	text-shadow: 0 0 10px rgba(0,0,0,0.3); 
 	letter-spacing:1px; 
-	text-align:center; }
+	text-align:center; 
+}
 
 .login img {
 	margin-left: 25%;
@@ -108,9 +109,8 @@ button {
 }
 
 p {
-
-	color: rgb(173, 118, 15);
+	color: rgb(222, 224, 235);
 	font-size: 13px;
 	background-color: skyblue;
-
+	border-radius: 4px;
 }
