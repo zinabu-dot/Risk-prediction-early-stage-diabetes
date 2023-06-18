@@ -105,13 +105,17 @@ select {
 	/* margin-top: 1rem; */
 	margin: 1rem auto auto auto;
 	display: block;
+	background-color: #4a77d4;
+	padding: 3px;
+	border-radius: 5px;
+	box-shadow: #333333;
 	text-align: center;
 }
 
 p {
 	color: rgb(222, 224, 235);
-	font-size: 13px;
-	background-color: rgb(14, 16, 16);
+	font-size: 14px;
+	background-color: rgb(49, 142, 142);
 	border-radius: 4px;
-	margin: 25%;
+	margin: 1rem 3rem 3rem 3rem;
 }
