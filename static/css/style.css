@@ -101,6 +101,7 @@ select {
 }
 
 button {
+	margin-top: 0.5rem;
 	text-align: center;
 	margin: auto;
 	display: block;
