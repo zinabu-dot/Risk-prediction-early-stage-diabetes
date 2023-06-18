@@ -101,9 +101,9 @@ select {
 	text-align: center;
 }
 
-button {
-	margin-top: 1rem;
-	margin: auto;
+.btn {
+	/* margin-top: 1rem; */
+	margin: 1rem auto auto auto;
 	display: block;
 	text-align: center;
 }
@@ -111,6 +111,6 @@ button {
 p {
 	color: rgb(222, 224, 235);
 	font-size: 13px;
-	background-color: skyblue;
+	background-color: rgb(14, 16, 16);
 	border-radius: 4px;
 }
