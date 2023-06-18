@@ -101,15 +101,15 @@ select {
 }
 
 button {
-	margin-top: 0.5rem;
-	text-align: center;
+	margin-top: 1rem;
 	margin: auto;
 	display: block;
+	text-align: center;
 }
 
 p {
 
-	color: white;
+	color: rgb(173, 118, 15);
 	font-size: 13px;
 	background-color: skyblue;
 
