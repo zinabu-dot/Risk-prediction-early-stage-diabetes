@@ -71,11 +71,12 @@ input {
 	/* width: 100%;  */
 	margin: auto; 
 	text-align: center;
+	display: block;
 	/* margin-top: 40px;  */
 	/* background: rgb(255, 255, 255); */
 	/* border: none; */
-	outline: none;
-	padding: 10px;
+	/* outline: none; */
+	/* padding: 10px; */
 	font-size: 13px;
 	color: #3988f7;
 	/* text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
@@ -106,6 +107,7 @@ button {
 }
 
 p {
+
 	color: white;
 	font-size: 13px;
 	background-color: skyblue;
