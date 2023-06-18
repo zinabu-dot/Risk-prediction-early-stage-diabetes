@@ -30,15 +30,15 @@ body {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3E1D6D', endColorstr='#092756',GradientType=1 ); 
 
 }
-.login { 
-	position: absolute;
+/* .login {  */
+	/* position: absolute; */
 	/* top: 5%;
 	left: 50%; */
-	margin: 0 3rem 2rem 3rem;
+	/* margin: 0 3rem 2rem 3rem; */
 	/* width:400px;
 	height:400px; */
-	display:block;
-}
+	/* display:block; */
+/* } */
 
 .login h1 { 
 	color: goldenrod; 
